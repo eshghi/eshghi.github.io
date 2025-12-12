@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AmirHossein Eshghi — Personal Website</title>
+  <meta name="description" content="AmirHossein Eshghi — M.Sc. student, Explainable AI & Medical Imaging. Publications, projects and contact." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='58' font-size='50' text-anchor='middle' fill='%23000'>AE</text></svg>">
+
+  <style>
+    :root{
+      --bg1:#0f1724; --bg2:#071028;
+      --glass: rgba(255,255,255,0.06);
+      --accent1: #6EE7B7; --accent2: #60A5FA;
+      --glass-2: rgba(255,255,255,0.03);
+      --card: rgba(255,255,255,0.03);
+      --glass-border: rgba(255,255,255,0.08);
+      --text: #e6eef8;
+      --muted: #9fb0c8;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(96,165,250,0.08), transparent 10%),
+                  radial-gradient(900px 500px at 90% 90%, rgba(110,231,183,0.06), transparent 12%),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      direction:rtl;
+    }
+
+    /* header / avatar corner */
+    .avatar-corner{
+      position:fixed;
+      top:22px;
+      left:22px; /* left because rtl and user asked a corner — you said "یه گوشش" so put left-top */
+      z-index:50;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .avatar-wrap{
+      width:82px;height:82px;border-radius:18px;
+      background:linear-gradient(135deg,var(--glass),var(--glass-2));
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      border:1px solid var(--glass-border);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      backdrop-filter: blur(6px) saturate(120%);
+    }
+    .avatar-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
+    /* fallback initials */
+    #avatarFallback{
+      width:100%;height:100%;display:none;align-items:center;justify-content:center;font-weight:700;
+      color:var(--bg2);background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      font-size:28px;
+    }
+
+    /* main container */
+    .layout{
+      max-width:1100px;margin:60px auto 120px;padding:28px;border-radius:16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      box-shadow: 0 20px 60px rgba(2,6,23,0.6);
+      display:grid;grid-template-columns:1fr 360px;gap:20px;
+      backdrop-filter: blur(8px);
+    }
+
+    /* hero */
+    .hero{
+      padding:28px 18px;
+    }
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#012;background-clip:padding-box;font-weight:700;font-size:13px}
+    h1{margin:18px 0 6px;font-size:34px;letter-spacing:0.2px}
+    p.lead{margin:0;color:var(--muted);line-height:1.6}
+
+    /* quick links */
+    .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      color:var(--text);text-decoration:none;font-weight:600;font-size:14px
+    }
+    .btn.primary{background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#021;box-shadow:0 6px 18px rgba(96,165,250,0.12)}
+    .meta {
+      margin-top:18px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;font-size:14px;
+    }
+
+    /* right column cards */
+    .right{
+      padding:22px;border-left:1px solid rgba(255,255,255,0.02);
+      display:flex;flex-direction:column;gap:16px;
+    }
+    .card{
+      background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 6px 24px rgba(3,7,18,0.5);
+    }
+    .skill-badge{display:flex;gap:8px;flex-wrap:wrap}
+    .skill-badge span{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
+
+    /* publications list */
+    .pubs{display:flex;flex-direction:column;gap:12px}
+    .pub{padding:10px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+    .pub h4{margin:0 0 6px;font-size:15px}
+    .pub p{margin:0;color:var(--muted);font-size:13px}
+
+    /* projects */
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+    .project h5{margin:0 0 6px;font-size:14px}
+
+    /* footer / contact */
+    footer{margin-top:26px;padding:16px;border-top:1px dashed rgba(255,255,255,0.02);color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .socials a{margin-left:8px;text-decoration:none;color:var(--muted);font-weight:600}
+
+    /* responsive */
+    @media (max-width:980px){
+      .layout{grid-template-columns:1fr; padding:18px}
+      .right{order:2}
+      .avatar-corner{left:12px;top:12px}
+      .projects{grid-template-columns:1fr}
+    }
+
+    /* subtle float animation */
+    .floating{
+      animation: floaty 6s ease-in-out infinite;
+    }
+    @keyframes floaty{
+      0%{transform:translateY(0)}
+      50%{transform:translateY(-6px)}
+      100%{transform:translateY(0)}
+    }
+
+    /* small dot decoration */
+    .decor{
+      position:absolute;right:-80px;top:-100px;width:320px;height:320px;border-radius:50%;
+      background:linear-gradient(135deg, rgba(96,165,250,0.05), rgba(110,231,183,0.04));
+      filter: blur(40px);pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- avatar corner -->
+  <div class="avatar-corner">
+    <div class="avatar-wrap floating">
+      <!-- عکس خودت اینجا بذار:
+           مسیر پیشنهادی: assets/avatar.jpg
+           اگر عکس موجود نباشه، fallback با حروف اول نمایش میده -->
+      <img id="avatarImg" src="assets/avatar.jpg" alt="AmirHossein Eshghi" onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='flex'">
+      <div id="avatarFallback">AE</div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="hero">
+      <span class="kicker">M.Sc. — Explainable AI & Medical Imaging</span>
+      <h1>امیرحسین اشقی — AmirHossein Eshghi</h1>
+      <p class="lead">متخصص یادگیری ماشین و بینایی‌ماشین با تمرکز روی **XAI** در تصویربرداری پزشکی. پژوهشگر با چند مقاله بین‌المللی و پروژه‌های عملی در حوزه‌های بینایی، تحلیل داده و مدل‌های سری‌زمانی.</p>
+
+      <div class="cta">
+        <a class="btn primary" href="Resume_Ready.pdf" target="_blank" rel="noopener">دانلود رزومه</a>
+        <a class="btn" href="#publications">منتشر شده‌ها</a>
+        <a class="btn" href="#projects">پروژه‌ها</a>
+        <a class="btn" href="mailto:Amir.Eshghi@birjand.ac.ir">ایمیل</a>
+      </div>
+
+      <div class="meta">
+        <div>📍 Iran</div>
+        <div>📧 Amir.Eshghi@birjand.ac.ir</div>
+        <div>🔗 <a href="https://linkedin.com/in/amirhossein-eshghi" target="_blank" style="color:var(--muted);text-decoration:none">LinkedIn</a></div>
+      </div>
+
+      <!-- featured -->
+      <div style="margin-top:20px;">
+        <div class="card">
+          <strong>آخرین پروژه:</strong>
+          <p style="margin:8px 0 0;color:var(--muted)">Ensemble از Vision-Transformerها برای تشخیص انواع MRI و یک سیستم XAI برای تفسیر تصمیم مدل.</p>
+        </div>
+      </div>
+
+      <section id="publications" style="margin-top:18px">
+        <h3 style="margin:12px 0 8px">Selected Publications</h3>
+        <div class="pubs">
+          <div class="pub">
+            <h4>Bias, Fairness, and Equity in Medical AI — Book Chapter (Springer)</h4>
+            <p>Forthcoming — Trustworthy and Explainable AI for Healthcare</p>
+          </div>
+          <div class="pub">
+            <h4>Multi-timestep LSTM Ensemble for Runoff Prediction</h4>
+            <p>Ecohydrology & Hydrobiology (Submitted, 2025)</p>
+          </div>
+          <div class="pub">
+            <h4>Insomnia in University Students — Review</h4>
+            <p>Sleep and Breathing (2024)</p>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- /hero -->
+
+    <aside class="right">
+      <div class="card">
+        <h4>Skills</h4>
+        <div class="skill-badge" style="margin-top:12px">
+          <span>Python</span><span>TensorFlow / Keras</span><span>OpenCV</span><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Projects</h4>
+        <div class="projects">
+          <div class="project">
+            <h5>Face Recognition App</h5>
+            <p style="margin:0;color:var(--muted)">اپلیکیشن شناسایی چهره برای جشنواره با واکنش‌های صوتی و ذخیره نام‌ها.</p>
+          </div>
+          <div class="project">
+            <h5>MRI Classification Ensemble</h5>
+            <p style="margin:0;color:var(--muted)">شش مدل ViT برای انواع اسلایس MRI و رای‌گیری ترکیبی.</p>
+          </div>
+          <div class="project">
+            <h5>Runoff Forecasting</h5>
+            <p style="margin:0;color:var(--muted)">Feature engineering و خوشه‌بندی برای بهبود پیش‌بینی سیلاب‌ها.</p>
+          </div>
+          <div class="project">
+            <h5>Educational Platform</h5>
+            <p style="margin:0;color:var(--muted)">ساخت وب آموزش اتوماتا و کامپایلر با Ruby on Rails.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Contact</h4>
+        <p style="margin:8px 0 0;color:var(--muted)">Email: Amir.Eshghi@birjand.ac.ir<br>Phone: +98 913 011 0579</p>
+      </div>
+
+      <footer>
+        <div style="font-size:13px;color:var(--muted)">© <strong>AmirHossein Eshghi</strong> — 2025</div>
+        <div class="socials">
+          <a href="https://github.com/eshghi" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/amirhossein-eshghi" target="_blank">LinkedIn</a>
+        </div>
+      </footer>
+
+    </aside>
+  </div>
+
+  <div class="decor"></div>
+
+  <script>
+    // -- توضیح کوتاه:
+    // اگر میخوای عکس خودت رو بگذاری:
+    // 1) در ریشه ریپو یک پوشه بساز به نام "assets"
+    // 2) عکس پروفایل را با نام "avatar.jpg" داخل assets آپلود کن
+    // مثال مسیر: /assets/avatar.jpg
+    //
+    // اگر avatar.jpg موجود نباشه، فیل‌بک AE نمایش داده میشه.
+    //
+    // نکته: اگر میخوای گوشه بالا-راست باشه، مقدار CSS در .avatar-corner را به { right:22px; left:auto } تغییر بده.
+
+    // small enhancement: open resume if exists otherwise hide button
+    (function(){
+      const resumeBtn = document.querySelector('.btn.primary');
+      fetch('Resume_Ready.pdf', {method:'HEAD'}).then(r=>{
+        if(!r.ok){
+          resumeBtn.style.display='none';
+        }
+      }).catch(()=>{ resumeBtn.style.display='none' });
+    })();
+  </script>
+</body>
+</html>
