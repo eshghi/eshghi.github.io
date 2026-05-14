@@ -168,6 +168,19 @@
             margin-left: 5px;
         }
 
+        .thesis-box {
+            background-color: #f1f8ff;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .thesis-box p {
+            margin: 5px 0;
+        }
+
         /* Table Styling */
         .table-wrapper {
             overflow-x: auto;
@@ -287,6 +300,11 @@
             color: #444;
             font-size: 0.95rem;
         }
+
+        .exp-desc ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
         
         /* Teaching Subsection */
         .teaching-subsection {
@@ -361,18 +379,18 @@
         </div>
 
         <h1>AmirHossein Eshghi</h1>
-        <p>Master's Student in Software Engineering | Specializing in Explainable AI (XAI) And Computer Vision</p>
+        <p>Master's Student in Software Engineering | Non-degree Student, Clemson University | Specializing in XAI & Computer Vision</p>
         
         <div class="contact-info">
             <div class="email-group">
                 <a href="mailto:Amir.Eshghi@birjand.ac.ir"><i class="fas fa-envelope"></i> Amir.Eshghi@birjand.ac.ir</a>
-                <a href="mailto:amir132323@gmail.com"><i class="fas fa-envelope"></i> amir132323@gmail.com</a>
                 <a href="mailto:Aeshghi@Clemson.edu"><i class="fas fa-envelope"></i> Aeshghi@Clemson.edu</a>
             </div>
             
             <div class="social-group">
                 <a href="https://linkedin.com/in/amirhossein-eshghi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://scholar.google.com/citations?user=X7g_ZnkAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="#"><i class="fas fa-phone"></i> +989130110579</a>
                 <a href="#"><i class="fas fa-map-marker-alt"></i> Iran</a>
             </div>
         </div>
@@ -382,7 +400,7 @@
         
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a highly-motivated Master of Science student at the University of Birjand, currently ranked <strong>1st in the department</strong>. My research focuses on <strong>Explainable AI (XAI)</strong> for medical imaging, aiming to bridge the gap between complex deep learning models and clinical interpretability. With a perfect <strong>20/20 GPA</strong> in my graduate studies, I am actively seeking PhD positions to advance my research career.</p>
+            <p>I am a highly motivated Master of Science student in Software Engineering at the University of Birjand, currently ranked <strong>1st in the department</strong> with a perfect <strong>20/20 GPA</strong>. I am also advancing my knowledge as a non-degree student in Computer Science at Clemson University. My research primarily focuses on <strong>Explainable AI (XAI)</strong> in computer vision, specifically proposing novel approaches using genetic algorithms to enhance Class Activation Maps (CAMs). Furthermore, I am actively expanding my expertise into <strong>Agentic AI and NLP</strong> pipelines. I am deeply driven by the goal of bridging the gap between complex deep learning models and practical, trustworthy clinical and industrial interpretability.</p>
         </section>
 
         <section id="education">
@@ -395,8 +413,13 @@
                 </div>
                 <div>University of Birjand, Iran</div>
                 <div style="margin: 15px 0;">
-                    <div><strong>Original GPA:</strong> <span class="gpa-badge">20.00 / 20</span> (Rank: 1st)</div>
+                    <div><strong>Original GPA:</strong> <span class="gpa-badge">20.00 / 20</span> (Rank: 1st in department)</div>
                     <div style="margin-top:5px;"><strong>Converted GPA (USA):</strong> <span class="gpa-badge">4.00 / 4.00</span> <span class="gpa-subtext">(Based on WES Standards)</span></div>
+                </div>
+
+                <div class="thesis-box">
+                    <p><strong>Master's Thesis:</strong> I am currently researching Class Activation Maps (CAMs) in computer vision (XAI) and proposing a new approach using genetic algorithms to provide more accurate heatmaps.</p>
+                    <p><strong>Supervisors:</strong> Dr. Seyyed Ali Hosseini (University of Birjand), Dr. Hamid Saadatfar (University of Birjand), and Dr. Siavash Bigdeli (Technical University of Denmark - DTU).</p>
                 </div>
                 
                 <p><strong>Selected Graduate Coursework:</strong></p>
@@ -422,89 +445,24 @@
 
             <div class="edu-item">
                 <div class="edu-header">
+                    <span class="edu-title">Non-Degree Student, Computer Science</span>
+                    <span class="edu-date">2025 - 2026</span>
+                </div>
+                <div>Clemson University (Remote)</div>
+                <p>Attending online courses through the Coursera platform.</p>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
                     <span class="edu-title">B.Sc. in Computer Engineering</span>
                     <span class="edu-date">2019 - 2024</span>
                 </div>
                 <div>University of Birjand, Iran</div>
                 <div style="margin: 15px 0;">
-                    <div><strong>Original GPA:</strong> 18.66 / 20 (Rank: 1st)</div>
-                    <div style="margin-top:5px;"><strong>Converted GPA (USA):</strong> <span class="gpa-badge">3.83 / 4.00</span> <span class="gpa-subtext">(Cumulative weighted average)</span></div>
+                    <div><strong>Original GPA:</strong> 18.66 / 20 (Rank: 1st among 125 students)</div>
+                    <div style="margin-top:5px;"><strong>Converted GPA (USA):</strong> <span class="gpa-badge">3.83 / 4.00</span></div>
                 </div>
-
-                <p><strong>Selected Relevant Coursework (AI & Math Focus):</strong></p>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Course Name</th>
-                                <th>Grade (20)</th>
-                                <th>USA (4.0)</th>
-                                <th>Europe (ECTS)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Fundamentals of Computer Vision</td><td>20.00</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                            <tr><td>Fundamentals of Computational Intelligence</td><td>20.00</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                            <tr><td>Data Structures</td><td>20.00</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                            <tr><td>Artificial Intelligence & Expert Systems</td><td>19.50</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                            <tr><td>Engineering Mathematics</td><td>20.00</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                            <tr><td>Algorithm Design</td><td>19.75</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                            <tr><td>Computer Networks</td><td>20.00</td><td class="highlight-grade">4.0 (A)</td><td>A (Excellent)</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            
-            <div class="pub-item">
-                <div class="pub-title">Bias, Fairness, and Equity in Medical AI (Book Chapter)</div>
-                <div class="pub-journal">In: Trustworthy and Explainable AI for Healthcare. Springer. (Forthcoming)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">
-                    <a href="https://www.researchgate.net/publication/398319343_Enhancing_Runoff_Prediction_through_Feature_Engineering_and_Cluster-Specific_Modeling" target="_blank">
-                        Enhancing Runoff Prediction through Feature Engineering and Cluster-Specific Modeling <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
-                    </a>
-                </div>
-                <div class="pub-journal">Water Resources Management <span class="tag-q1">JCR Q1</span>, 2025 (Minor Revision)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">A Multi-Timestep LSTM Ensemble Regressor for Enhanced Short-Term Runoff Prediction</div>
-                <div class="pub-journal">Ecohydrology & Hydrobiology <span class="tag-q2">JCR Q2</span>, 2025 (Under Review)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/40434593/" target="_blank">
-                        Insomnia in University Students: A Review of Etiological Factors and Data Analytic Techniques <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
-                    </a>
-                </div>
-                <div class="pub-journal">Sleep and Breathing <span class="tag-q2">JCR Q2</span>, 2025 (Published)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Enhancing Student Course Selection: An Intelligent Web-Based System Using Hybrid Grade Prediction</div>
-                <div class="pub-journal">Int. J. of Technology Enhanced Learning, 2025 (Submitted)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Image Retrieval Using Extracted Features and Local Binary Patterns</div>
-                <div class="pub-journal">Informatics Conference, Tehran, 2023 (Best Paper Award)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Image Retrieval Using Content-based Patterns and Probability Distribution</div>
-                <div class="pub-journal">Software Engineering Conference, Gilan Iran, 2024 (Published)</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Improving Runoff Prediction through Feature Engineering and Cluster-based Modeling</div>
-                <div class="pub-journal">1st National Conference on Hydro Informatics and AI, 2025 (Published)</div>
+                <p>Specialization in Artificial Intelligence.</p>
             </div>
         </section>
 
@@ -513,20 +471,56 @@
             
             <div class="exp-item">
                 <div class="exp-header">
-                    <span class="exp-role">Research Assistant (Data Analyst)</span>
-                    <span class="exp-date">2023 - 2025</span>
+                    <span class="exp-role">Research Collaborator (Agentic AI & NLP)</span>
+                    <span class="exp-date">2026 - Present</span>
                 </div>
-                <div class="exp-company">Kavir Tire (One of Iran's largest tire manufacturers)</div>
-                <p class="exp-desc">Performed advanced data analysis to support manufacturing and business operations. Utilized data-driven techniques to optimize production processes and enhance decision-making efficiency within the industrial sector.</p>
+                <div class="exp-company">Supervised by Dr. Siavash Bigdeli</div>
+                <div class="exp-desc">
+                    <ul>
+                        <li><strong>Agentic AI & Semantic Data Defragmentation:</strong> Developed a multi-agent NLP pipeline for semantic reconstruction of fragmented datasets using Large Language Models (LLMs).</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="exp-item">
                 <div class="exp-header">
-                    <span class="exp-role">Research Assistant</span>
-                    <span class="exp-date">2024 - 2025</span>
+                    <span class="exp-role">AI & Data Science Researcher</span>
+                    <span class="exp-date">2023 - 2025</span>
                 </div>
-                <div class="exp-company">Ministry of Health and Medical Education (Razi Hospital)</div>
-                <p class="exp-desc">Conducted data analysis for a large-scale COVID-19 research project. Applied statistical methods and machine learning techniques to patient data to identify patterns and contribute to medical research outcomes.</p>
+                <div class="exp-company">Razi Hospital & Ministry of Health, Iran</div>
+                <div class="exp-desc">
+                    <ul>
+                        <li><strong>Neurological Disease Detection (AVM):</strong> Built a Vision Transformer-based model for automated Arteriovenous Malformation (AVM) detection from MRI scans.</li>
+                        <li><strong>Large-Scale COVID-19 Analytics:</strong> Analyzed large-scale clinical data to extract patterns for patient care optimization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-role">Machine Learning Engineer (R&D)</span>
+                    <span class="exp-date">2023 - 2025</span>
+                </div>
+                <div class="exp-company">Kavir Tire (Largest Tire Manufacturer in Iran)</div>
+                <div class="exp-desc">
+                    <ul>
+                        <li><strong>Predictive Maintenance System:</strong> Designed a predictive maintenance model to forecast failures in curing press machines.</li>
+                        <li><strong>Manufacturing Optimization:</strong> Developed a deep learning model to predict and optimize steam consumption in manufacturing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-role">Hydrological Deep Learning Researcher</span>
+                    <span class="exp-date">2025</span>
+                </div>
+                <div class="exp-company">Iran Meteorological Organization (IRIMO)</div>
+                <div class="exp-desc">
+                    <ul>
+                        <li><strong>AI-Driven Flood Risk Mitigation:</strong> Developed ML/DL models for real-time river runoff prediction and flood risk forecasting.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="exp-item">
@@ -534,26 +528,68 @@
                     <span class="exp-role">Teaching Experience</span>
                     <span class="exp-date">2021 - Present</span>
                 </div>
-                <div class="exp-company">University of Birjand</div>
+                <div class="exp-company">University of Birjand, Iran</div>
                 
                 <div class="teaching-subsection">
-                    <div class="teaching-title">Visiting Lecturer (2024-Present)</div>
+                    <div class="teaching-title">Visiting Lecturer (2024 - Present)</div>
                     <ul class="teaching-list">
-                        <li>Instructor for undergraduate Computer Engineering courses.</li>
+                        <li>Delivered lectures for undergraduate computer engineering courses.</li>
                     </ul>
 
-                    <div class="teaching-title">Laboratory Instructor</div>
+                    <div class="teaching-title">Laboratory Teacher (2024 - Present)</div>
                     <ul class="teaching-list">
-                        <li>Database Laboratory</li>
-                        <li>Microprocessor Laboratory</li>
+                        <li>Instructed lab sessions for Database Lab and Microprocessor Lab.</li>
                     </ul>
 
-                    <div class="teaching-title">Teaching Assistant (TA)</div>
+                    <div class="teaching-title">Teacher Assistant (2021 - Present)</div>
                     <ul class="teaching-list">
-                        <li>Fundamentals of Programming, Data Structures, Microprocessors</li>
-                        <li>Theory of Languages and Automata, Computer Vision, Computational Intelligence</li>
+                        <li>Assisted with courses including: Fundamental of Programming, Data Structures, Microprocessors, Theory of Language and Automata, Computer Vision, Computational Intelligence.</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            
+            <div class="pub-item">
+                <div class="pub-title">EvoCAM: A New Evolutionary-Based Class Activation Mapping Method</div>
+                <div class="pub-journal">European Conference on Computer Vision (ECCV), 2026. (Under Review)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Bias, Fairness, and Equity in Medical AI (Book Chapter)</div>
+                <div class="pub-journal">In: Trustworthy and Explainable AI for Healthcare. Springer. 2026 (Accepted, In Press)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Enhancing Runoff Prediction through Feature Engineering and Cluster-Specific Modeling</div>
+                <div class="pub-journal">Water Resources Management <span class="tag-q1">JCR Q1</span>, 2025 (Accepted)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">A Multi-Timestep LSTM Ensemble Regressor for Enhanced Short-Term Runoff Prediction</div>
+                <div class="pub-journal">Journal of Forecasting, 2025 (Under Review)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Insomnia in University Students: A Review of Etiological Factors and the Advancement of Data Analytic Techniques</div>
+                <div class="pub-journal">Sleep and Breathing, Springer, 2024 (Published)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">A Hybrid AI Framework for Academic Advising: Integrating Ensemble-Based Grade Prediction and a Rule-Based Expert System</div>
+                <div class="pub-journal">Computers & Education, Elsevier, 2026 (Submitted)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Improving Runoff Prediction through Feature Engineering and Cluster-Based Modeling</div>
+                <div class="pub-journal">1st National Conference on Hydro Informatics and Artificial Intelligence in Water Engineering, 2025 (Best Paper Award)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Image Retrieval Using Extracted Features and Local Binary Patterns</div>
+                <div class="pub-journal">Informatics Conference, Tehran, 2023 (Best Paper Award)</div>
             </div>
         </section>
 
@@ -561,23 +597,25 @@
             <h2>Honors & Awards</h2>
             <ul>
                 <li><strong>Member:</strong> Iran's National Elites Foundation (INEF), 2025.</li>
-                <li><strong>Admission:</strong> Accepted to Master's in Computer Science at Clemson University, USA (Fall 2025) - <em>Declined due to financial and personal reasons.</em></li>
+                <li><strong>1st Rank:</strong> Among all Master's students in Computer Engineering, University of Birjand, 2025.</li>
+                <li><strong>1st Rank:</strong> Among 2019 Computer Engineering entry students, University of Birjand, 2024.</li>
                 <li><strong>1st Rank:</strong> Computer Olympiad of the Eastern Region of Iran, 2024.</li>
-                <li><strong>1st Rank:</strong> Among all Master's students in Computer Engineering (2025).</li>
-                <li><strong>1st Rank:</strong> Among all Bachelor's students in Computer Engineering (2024).</li>
+                <li><strong>1st Rank:</strong> Among Computer Engineering Students in Olympiad at University of Birjand, 2023.</li>
+                <li><strong>Leadership:</strong> Leader of AI society in University of Birjand.</li>
+                <li><strong>Membership:</strong> Member of the Iranian Society of Machine Vision and Image Processing.</li>
             </ul>
         </section>
 
         <section id="skills">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">TensorFlow/Keras</span>
-                <span class="skill-tag">Scikit-learn</span>
-                <span class="skill-tag">Pandas & NumPy</span>
-                <span class="skill-tag">Matplotlib</span>
-                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">Python (TensorFlow, PyTorch, Keras)</span>
                 <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">Git</span>
                 <span class="skill-tag">LaTeX</span>
             </div>
         </section>
@@ -588,14 +626,14 @@
                 <strong>Persian:</strong> Native
             </div>
             <div class="language-item">
-                <strong>English:</strong> Proficient (B2 Level) - Certified by University of Birjand English Professor.
+                <strong>English:</strong> Professional Working Proficiency
             </div>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2025 Amirhossein Eshghi. All rights reserved.</p>
+        <p>&copy; 2026 AmirHossein Eshghi. All rights reserved.</p>
     </footer>
 
 </body>
