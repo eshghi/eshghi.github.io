@@ -1,0 +1,177 @@
+[
+  {
+    "slug": "evo-cam",
+    "title": "Evo-CAM",
+    "category": "vision",
+    "year": "2026",
+    "description": "Evo-CAM searches for image regions that explain a classifier’s decision. Its evolutionary objective combines confidence, insertion and deletion, and spatial coherence. Experiments across convolutional networks and a vision transformer examine explanation faithfulness and localization on ImageNet and MS COCO."
+  },
+  {
+    "slug": "eye-tracking",
+    "title": "Eye & Pupil Tracking",
+    "category": "vision",
+    "year": "2026",
+    "description": "A developing computer-vision prototype aimed at locally manufacturable Iranian eye- and pupil-tracking devices. The work connects camera optics, eye localization, and time-indexed measurements while the hardware and validation process continue to evolve."
+  },
+  {
+    "slug": "image-reconstruction-ranking",
+    "title": "Image Reconstruction & Ranking",
+    "category": "vision",
+    "year": "2026",
+    "description": "A 2026 course coding study of image reconstruction, structural similarity, and pairwise ranking. The notebook records training behavior, reconstructed examples, and paired inputs as a compact implementation exercise."
+  },
+  {
+    "slug": "mri-avm",
+    "title": "MRI-based AVM Classification",
+    "category": "vision",
+    "year": "2025",
+    "description": "A multi-view pipeline for classifying cerebral AVM from standard T2 and FLAIR MRI. The research connects image preparation, convolutional and transformer features, and patient-level voting within an inspectable clinical-imaging workflow."
+  },
+  {
+    "slug": "labp-cbir",
+    "title": "LABP Image Retrieval",
+    "category": "vision",
+    "year": "2024",
+    "description": "An image-retrieval method combining multi-layer texture patterns with a joint RGB color representation. The training-free pipeline ranks images by descriptor similarity and is evaluated on Corel collections through retrieval precision and distance-measure comparisons."
+  },
+  {
+    "slug": "wavelet-feature-retrieval",
+    "title": "Wavelet Retrieval Experiments",
+    "category": "vision",
+    "year": "2023",
+    "description": "An early content-based image-retrieval study using multiscale wavelet representations and distance-based ranking. This 2023 work established the initial CBIR direction and led to a paper published in Iran."
+  },
+  {
+    "slug": "hierarchical-neural-retrieval",
+    "title": "Defragmentation",
+    "category": "nlp",
+    "year": "2026",
+    "description": "A working tool for organizing documents into semantic trees and retrieving information through their branches. Defragmentation combines hierarchical text organization, cosine and learned scoring, and interactive views of search paths and proposition relationships."
+  },
+  {
+    "slug": "memar-graph-reasoning",
+    "title": "Memar — Object-Oriented Architecture Studio",
+    "category": "nlp",
+    "year": "2026",
+    "description": "An AI-assisted coding tool that turns a project brief into an object-oriented architecture tree. Memar connects top-down questions, reviewed changes, and version history with a Python code notebook whose classes remain traceable to the design."
+  },
+  {
+    "slug": "hisib",
+    "title": "Hi-SIB",
+    "category": "algorithms",
+    "year": "2026",
+    "description": "A continuous optimizer built around adaptive differential search and multiple attraction centers. Benchmarks across three CEC suites examine how social guidance, population reduction, and search history affect performance at low, medium, and larger evaluation budgets."
+  },
+  {
+    "slug": "local-logistic-classification",
+    "title": "Local Logistic Classification",
+    "category": "algorithms",
+    "year": "2025",
+    "description": "A divide-and-conquer classifier that partitions heterogeneous data with K-means++ and fits local logistic models only in mixed clusters. Experiments on five datasets evaluate whether local specialization improves prediction while retaining interpretable decision rules."
+  },
+  {
+    "slug": "class-oriented-reduction",
+    "title": "Class-oriented Data Reduction",
+    "category": "algorithms",
+    "year": "2024",
+    "description": "A density and spatial-ranking method for retaining informative samples while removing redundant observations. The class-aware procedure evaluates data reduction, execution time, and downstream classification quality together."
+  },
+  {
+    "slug": "pm25-forecasting",
+    "title": "Urban PM2.5 Forecasting",
+    "category": "applications",
+    "year": "2026",
+    "description": "A station-aware PM2.5 forecasting pipeline for three monitoring sites in Mashhad. Missing-data repair, temporal features, environmental clustering, optimized regressors, and a local prediction toolbox form one operational workflow."
+  },
+  {
+    "slug": "bruxism-risk-factors",
+    "title": "Explainable Bruxism Analysis",
+    "category": "applications",
+    "year": "2026",
+    "description": "An explainable tabular-learning study of factors associated with self-reported bruxism. Model comparison is combined with correlation, permutation importance, SHAP, statistical tests, and decision rules to examine a multifactorial outcome."
+  },
+  {
+    "slug": "academic-advising",
+    "title": "AI-assisted Academic Advising",
+    "category": "applications",
+    "year": "2025–2026",
+    "description": "A hybrid advising system combining cluster-specific grade prediction with a rule-based recommendation engine. The deployed workflow translates an ensemble forecast into probation warnings, GPA estimates, and course guidance for students."
+  },
+  {
+    "slug": "covid-mortality",
+    "title": "COVID-19 Mortality Modeling",
+    "category": "applications",
+    "year": "2024–2026",
+    "description": "A retrospective mortality-modeling study using 31,277 PCR-confirmed COVID-19 records from South Khorasan. Tree-based models and SHAP connect predictive performance with the direction and consistency of important clinical variables."
+  },
+  {
+    "slug": "clustered-runoff",
+    "title": "Cluster-specific Runoff Prediction",
+    "category": "applications",
+    "year": "2025",
+    "description": "A hybrid runoff-prediction framework that partitions hydrological observations before fitting cluster-specific regressors. Feature relationships, cluster selection, and prediction comparisons show how local modeling responds to heterogeneous runoff conditions."
+  },
+  {
+    "slug": "multiscale-lstm-runoff",
+    "title": "Multi-Timestep LSTM Runoff",
+    "category": "applications",
+    "year": "2025",
+    "description": "An ensemble of LSTM regressors that learns from several recent time windows and uses particle swarm optimization for parameter selection. Evaluation on later observations connects error measures with annual and monthly prediction traces."
+  },
+  {
+    "slug": "personalized-sleep-scoring",
+    "title": "Personalized Sleep Scoring",
+    "category": "applications",
+    "year": "2025",
+    "description": "A learning-based method for deriving robust sleep-stage labels from multiple scorers. Confusion-matrix probabilities preserve each expert’s information and are evaluated with EEG and EMG features across two public sleep datasets."
+  },
+  {
+    "slug": "concrete-strength",
+    "title": "Concrete Strength Modeling",
+    "category": "applications",
+    "year": "2025",
+    "description": "An engineering regression workflow combining autoencoder-based data refinement, model comparison, and metaheuristic parameter search. Saved prediction curves, error comparisons, and a Taylor diagram document the behavior of the tested models."
+  },
+  {
+    "slug": "tire-press-failures",
+    "title": "Tire Press Failure Prediction",
+    "category": "applications",
+    "year": "2024–2025",
+    "description": "A predictive-maintenance study that converts estimated intervals between tire-press faults into actionable time-window warnings. Real operational reports, label cleaning, simulation-based evaluation, and a decision-support interface connect the model to maintenance planning."
+  },
+  {
+    "slug": "medical-ai-bias",
+    "title": "Bias & Fairness in Medical AI",
+    "category": "writing",
+    "year": "2026",
+    "description": "A structured chapter on how data, algorithms, evaluation practices, and clinical systems can introduce bias into medical AI. Case-based analysis connects each source of unfairness with its practical consequences and possible mitigation strategies."
+  },
+  {
+    "slug": "trustworthy-medical-ai",
+    "title": "Trustworthy Medical AI",
+    "category": "writing",
+    "year": "2026",
+    "description": "A chapter on moving medical AI from controlled experiments into clinical practice through risk-based evaluation, explainability, local validation, monitoring, and human oversight. The focus is the evidence and workflow required for dependable adoption."
+  },
+  {
+    "slug": "responsible-ai-adoption",
+    "title": "Responsible AI Adoption",
+    "category": "writing",
+    "year": "2026",
+    "description": "A four-layer framework connecting responsible-AI goals, implementation stages, governance, and measured outcomes. It treats adoption as a continuing sociotechnical process whose evidence must be reviewed throughout the system lifecycle."
+  },
+  {
+    "slug": "cam-review",
+    "title": "A Method-centered CAM Review",
+    "category": "writing",
+    "year": "2025–2026",
+    "description": "A method-centered review of 57 class activation mapping papers. Its taxonomy connects attribution signals, architectural assumptions, and evaluation objectives while keeping faithfulness, localization, and visual appearance conceptually distinct."
+  },
+  {
+    "slug": "insomnia-review",
+    "title": "Insomnia & Data Analytics",
+    "category": "writing",
+    "year": "2025",
+    "description": "A review of student insomnia research organized by population, location, study period, associated factors, and analytical tools. The synthesis identifies recurring determinants and traces the growing use of machine learning in recent studies."
+  }
+]
